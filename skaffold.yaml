@@ -10,7 +10,7 @@ profiles:
           # - image: demo-scg   # local(로컬/push없이 실행만)
           jib:
             args:
-              - -DskipTests
+              - -DskipTests                                               # -DskipTests 
               - "-Djib.container.environment=SPRING_PROFILES_ACTIVE=dev"  # jib 플러그인을 통해 dev profile에 대해 수행
             fromImage: docker.io/library/openjdk:11.0.11-jre              # 실행을 위한 runtime image
     deploy:
