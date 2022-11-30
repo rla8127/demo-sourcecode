@@ -37,8 +37,6 @@ jobs:
         REPO: demo-scg # 레포 이름
       run: |
         pwd
-        cd build/libs
-        ls -al
         docker build -t $REPO .
         docker tag $REPO:latest $NAME/$REPO:latest
         docker push $NAME/$REPO:latest
