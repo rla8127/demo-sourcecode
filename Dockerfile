@@ -1,5 +1,4 @@
 FROM openjdk:11-jdk
-COPY build/libs/spring-petclinic.jar spring-petclinic.jar
+COPY build/libs/spring-petclinic-2.7.3.jar spring-petclinic-2.7.3.jar
 
-
-ENTRYPOINT ["java","-jar","spring-petclinic.jar"]
+ENTRYPOINT ["java","-jar","spring-petclinic-2.7.3.jar"]
