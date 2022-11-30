@@ -36,6 +36,8 @@ jobs:
         NAME: rla8127 # 계정 명
         REPO: demo-scg # 레포 이름
       run: |
+        pwd
+        ls -al
         docker build -t $REPO .
         docker tag $REPO:latest $NAME/$REPO:latest
         docker push $NAME/$REPO:latest
